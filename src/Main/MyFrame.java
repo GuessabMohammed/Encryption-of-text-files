@@ -27,12 +27,6 @@ public class MyFrame extends JFrame implements ActionListener {
 		JPanel panel = new JPanel();
 		panel.setBackground(new Color(0x123456));
 		panel.setLayout(null);
-		
-		/*bt1 = new JButton("Creat a new FILE");
-		bt1.setFocusable(false);
-		bt1.setBounds(100, 270, 300, 50);
-		bt1.addActionListener(this);
-		//this.add(bt1);*/
 
 
 		lb.setBounds(100,10,300,200);
@@ -62,31 +56,7 @@ public class MyFrame extends JFrame implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
-		/*if(arg0.getSource() == bt1) {
-				JLabel labelDiscrubtion = new JLabel();
-				labelDiscrubtion.setText("Discribtion : put your text to encrypt and the result will be saved in a file");
-				labelDiscrubtion.setHorizontalAlignment(JLabel.CENTER);
-				labelDiscrubtion.setFont(new Font("MV Boli",Font.BOLD,10));
-				labelDiscrubtion.setBounds(0,10,500,50);
-				
-				JTextField textField = new JTextField();
-				textField.setFont(new Font("Elephant",Font.PLAIN,28));
-				textField.setBounds(5,55,490,70);
-				
-				
-				
-				
-				JFrame frame1 = new JFrame();
-				frame1.add(labelDiscrubtion);
-				frame1.add(textField);
-				frame1.setSize(500,500);
-				frame1.setResizable(false);
-				frame1.setLayout(null);
-				frame1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-				frame1.setVisible(true);
-				
-			
-		}*/
+		
 		if(arg0.getSource() == bt2) {
 				JFileChooser fileChooser = new JFileChooser();
 				int respond = fileChooser.showOpenDialog(null);
@@ -179,11 +149,6 @@ public class MyFrame extends JFrame implements ActionListener {
 		btnMethod3.setFocusable(false);
 		btnMethod3.setBounds(105, 190, 140, 50);
 		btnMethod3.addActionListener(this);
-
-		/*btnMethod4 = new JButton("RSA");
-		btnMethod4.setFocusable(false);
-		btnMethod4.setBounds(200, 210, 140, 50);
-		btnMethod4.addActionListener(this);*/
 		
 		JFrame frame2 = new JFrame();
 		frame2.add(labelMenu);
@@ -191,7 +156,6 @@ public class MyFrame extends JFrame implements ActionListener {
 		frame2.add(btnMethod1);
 		frame2.add(btnMethod2);
 		frame2.add(btnMethod3);
-		//frame2.add(btnMethod4);
 		frame2.setSize(350,400);
 		frame2.setResizable(false);
 		frame2.setLayout(null);
